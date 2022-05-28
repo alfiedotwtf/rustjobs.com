@@ -1,0 +1,14 @@
+[config]
+template = "content.html"
+
+[plaintext]
+title = "Rust Jobs - Page Not Found"
+
+[markdown]
+content = """
+# Page Not Found
+
+Unfortunately, the page you requested does not exist.
+
+If you belive this was an error, please contact me so I can investigate.
+"""

@@ -1,0 +1,10 @@
+[config]
+template = "homepage.html"
+
+[plaintext]
+title = "Rust Jobs"
+
+[markdown]
+content = """
+Under construction. Please go to the blog for more information.
+"""

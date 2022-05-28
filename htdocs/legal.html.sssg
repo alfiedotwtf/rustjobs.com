@@ -1,0 +1,103 @@
+[config]
+template = "content.html"
+
+[plaintext]
+title = "Rust Jobs - Legal Policies and Disclaimer"
+
+[markdown]
+content = """
+# Legal Policies and Disclaimer
+
+For the right to use the Service, You agree to the following policies and disclaimer:
+
+- [Cookies Policy](#cookies-policy)
+- [Privacy Policy](#privacy-policy)
+- [Usage Policy](#usage-policy)
+- [Disclaimer](#disclaimer)
+
+## Interpretation and Definitions
+
+Capitalised words in these policies and disclaimer have the following meaning:
+
+- **Content** refers to information available on the Service to all users
+- **Data** refers to personally identifiable information
+- **Jurisdiction** refers to Victoria, Australia
+- **Service** refers to the Rust Jobs website, https://www.rustjobs.com
+- **Us** refers to Rust Jobs Pty Ltd, Australian Business Number 71 658 505 812
+- **We** refers to Rust Jobs Pty Ltd, Australian Business Number 71 658 505 812
+- **You** refers to the legal entity using the Service
+- **Your** refers to the possessive case of the legal entity using the Service
+
+## Governing Law and Severability
+
+You warrant that these policies and disclaimer will be **exclusively governed** by the laws of the Jurisdiction, and any and all disputes will be **exclusively heard** in the courts of Jurisdiction.
+
+If any policy, disclaimer, section, subsection, sentence, clause, phrase, or word within these policies and disclaimer are invalid or unenforceable, they are to be interpreted to accomplish their objectives to the greatest extent possible under the law, whilst the remaining policies, disclaimer, sections, subsections, sentences, clauses, phrases, or words continue to be valid and enforceable.
+
+## Cookies Policy
+
+You warrant that We may use the following cookies when You use the Service:
+
+- **"legal"** records **Your agreement** to our Legal Policies and Disclaimer
+- **"session"** allows Us to authenticate and authorise You when logged in
+
+## Privacy Policy
+
+You warrant that **We may collect Your Data**:
+
+- By asking You
+- Automatically when You use the Service
+
+You warrant that **We may use Your Data** for the following purposes:
+
+- To provide our Service
+- To improve our Service
+- To identify You
+- To contact You
+
+You warrant that **We may disclose Your Data**:
+
+- To third-party suppliers to provide the Service
+- To third-party suppliers to improve the Service
+- To other Service users if You have opted in to do so
+- To third-parties if legally required
+- To third-parties to protect the Service
+- To third-parties to defend the Service
+- To third-parties as part of any acquisition of Us
+
+**You have the right to**:
+
+- Request access to Your Data
+- Request corrections to Your Data
+- Object to the use of Your Data
+- Request erasure of Your Data
+- **Withdraw Your consent** to the collection, use, and disclosure of Your Data
+
+## Usage Policy
+
+You warrant that:
+
+- You are over the age of 18
+- You are responsible for the reliability of the Content You supply to the Service
+- You are responsible for the reliability of the Data You supply to the Service
+- **You are responsible for the legality** of the Content You supply to the Service
+- **You are responsible for the legality** of the Data You supply to the Service
+- You grant Us the right to use Your supplied Content
+- You grant Us the right to modify Your supplied Content
+- You grant Us the right to distribute Your supplied Content
+- You are not in a country subject to any United States embargo
+- You are not in a country designated "terrorist supporting" by the United States
+- You are not on any list of prohibited or restricted parties by the United States
+
+## Disclaimer
+
+You warrant that:
+
+- We provide the Service to You "AS IS"
+- We provide the Service to You **without warranties of any kind**
+- We are not liable for any damages in connection to Your use of the Service
+- We are not liable for any damages in connection to Content on the Service
+- **You indemnify Us against any liability** in connection to Your use of the Service
+- You indemnify Us against any liability in connection to Content on the Service
+- You use the Service **at Your own risk**
+"""

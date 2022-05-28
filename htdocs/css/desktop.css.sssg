@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/css/fonts/inter-300.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/css/fonts/inter-600.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/css/fonts/inter-700.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/css/fonts/inter-800.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/css/fonts/inter-900.ttf");
+    font-weight: 900;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+
+    margin:  0;
+    padding: 0;
+
+    font-family:    "Inter", sans-serif;
+    font-size:      20px;
+    font-weight:    300;
+    letter-spacing: -1px;
+
+    color: #444;
+}
+
+html {
+    height:     100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    height:  100%;
+
+    flex-direction:   column;
+    background-color: #FFF0E0;
+}
+
+h1 {
+    font-size:   2.5em;
+    font-weight: 800;
+}
+
+h2 {
+    margin:      1.75em 0 1em;
+    font-size:   1.5em;
+    font-weight: 800;
+}
+
+h3 {
+    margin:      1.25em 0 1em;
+    font-size:   1.1em;
+    font-weight: 800;
+}
+
+p, li {
+    margin:      1em 0;
+    line-height: 1.5em;
+}
+
+ol, ul {
+    padding-left: 3em;
+}
+
+blockquote {
+    margin:  1.5em 0 1.5em 2em;
+    padding: 1px 0 1px 1em;
+
+    font-size:   .8em;
+    border-left: 3px solid #5773d9;
+}
+
+a, a:hover, a:visited {
+    font-weight:     700;
+    color:           #5773d9;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 600;
+    color:       #000;
+}
+
+#menu {
+    width:  100%;
+    margin: 0 auto;
+
+    text-align:       right;
+    border-bottom:    1px solid #CCC;
+    background-image: url("/images/menu.png");
+}
+
+#menu p {
+    width:   1000px;
+    margin:  0 auto;
+    padding: 1em 100px;
+}
+
+#menu .button {
+    background-color: #F97785;
+}
+
+#header {
+    width:   1000px;
+    margin:  0 auto;
+    padding: 100px 100px;
+
+    text-align: center;
+}
+
+#header img {
+    height: 150px
+}
+
+#main {
+    position:  relative;
+    width:     1000px;
+    padding:   0 100px 5em;
+    margin:    0 auto;
+    flex-grow: 1;
+}
+
+#footer {
+    padding: 5em 0;
+
+    text-align:       right;
+    border-top:       1px solid #AAA;
+    background-color: #70B0F0;
+}
+
+#footer p, #footer span {
+    width:   1000px;
+    margin:  0 auto;
+    padding: .5em 100px;
+
+    font-size:   0.7em;
+    font-weight: 600;
+    color:       #FFF;
+}
+
+#footer a {
+    margin-left: 1em;
+
+    color:           #FFF;
+    text-decoration: none;
+}
+
+#footer a:first-child {
+    font-weight: 900;
+    font-size:   1.75em;
+}
+
+#footer span {
+    display: block;
+
+    word-spacing: 2px;
+}
+
+#legal {
+    position:   absolute;
+    top:        4em;
+    left:       0;
+    margin-top: 30px;
+    padding:    50px;
+
+    z-index:          100;
+    box-shadow:       0 10px 20px #2B2B2B;
+    border-radius:    8px 8px 8px 8px;
+    background-color: #FFF;
+}
+
+#legal h2 {
+    margin: 0 0 1em;
+}
+
+#legal .button:first-child {
+    margin: 2em auto 1em;
+}
+
+#legal .button {
+    display: block;
+
+    background-color: #70B0F0;
+}
+
+#legal p:last-child {
+    margin-bottom: 0;
+}
+
+#subscribe {
+    width:   80%;
+    margin:  50px auto 0;
+    padding: 50px;
+
+    box-shadow:       0 10px 20px #2B2B2B;
+    border-radius:    8px 8px 8px 8px;
+    background-color: #FFF;
+}
+
+#subscribe h2 {
+    margin: 0 0 1em;
+}
+
+#subscribe p {
+    margin:  0;
+    padding: 0;
+}
+
+#subscribe input {
+    width:   100%;
+    margin:  1em 0;
+    padding: .5em;
+
+    border-top:    1px solid #999;
+    border-left:   1px solid #999;
+    border-right:  1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+#subscribe .button {
+    display: block;
+
+    background-color: #70B0F0;
+}
+
+.button, .button:hover, .button:visited {
+    padding:       1em;
+    border-radius: 8px 8px 8px 8px;
+
+    font-size:   0.8em;
+    font-weight: 600;
+    text-align:  center;
+
+    text-decoration:  none;
+    color:            #FFF !important;
+}
+
+.message-ok {
+    padding: 20px;
+
+    border:           1px solid #999;
+    background-color: #CCFFCC;
+}

@@ -1,0 +1,27 @@
+[config]
+template = "content.html"
+
+[plaintext]
+title = "Rust Jobs - The Rust Jobs Blog"
+
+[markdown]
+content = """
+# The Rust Jobs Blog
+
+Hi, I'm Alfie - a solo developer working on building Rust Jobs in my spare time. As you can see, the website at the moment is what you might call Pre-MVP (Minimal Viable Product). So to possibly give you some value before it's actually up and running, I'll be documenting my entire journey building Rust Jobs on this blog... hopefully there may be something useful here that may help you in the future.
+
+## Blog Posts
+
+- 2022-05-29: <a href="/blog/the-rust-jobs-market.html">The Rust Jobs Market</a>
+
+<div id="subscribe">
+    <h2>Don't miss the next blog post!</h2>
+    <p>
+        Get notified every time a new blog post goes live.
+        Subscribe below with your email address (no spam, I promise)
+    </p>
+    <input type="text" name="email" id="email"/>
+    <a class="button" href="" onclick="return subscribe('blog')">Subscribe to
+    new blog post emails</a>
+</div>
+"""

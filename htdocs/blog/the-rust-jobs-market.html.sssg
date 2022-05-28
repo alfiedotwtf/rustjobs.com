@@ -1,0 +1,75 @@
+[config]
+template = "content.html"
+
+[plaintext]
+title = "Rust Jobs - The Rust Jobs Market"
+
+[markdown]
+content = """
+# The Rust Jobs Market
+
+**Alfie John** : 2022-05-29
+
+At the moment it's kind of hard to find many jobs using Rust because there's no one go-to place. Instead, they're all scattered around the Internet and IRL i.e:
+
+- Job aggregator websites
+- Meetups (if you're lucky enough to have a Rust Meetup near by)
+- Well-connected tech recruiters
+- r/rust on Reddit (if your timing is right)
+- and maybe via the monthly "Ask HN: Who's Hiring?" post on Hacker News
+
+But from what I've found, you're more likely to get a Rust job via someone you already know who's also using Rust, rather than from the places mentioned above. Sadly this is almost like a secret handshake club... and I'd like to help fix that.
+
+My aim with Rust Jobs is the following:
+
+- To be a home for Rust jobs
+- To be a tutorial for building Rust websites
+- To document my Lean Startup journey
+
+## To be a Home for Rust Jobs
+
+I've heard from many higher-ups that they've thought about using Rust at their workplace, but the common fear is they'd have a hard time hiring because of the small talent pool.
+
+But if Rust Jobs turns out to become a success, it could be used as a showcase to management that there really is a thriving community of other companies using Rust, and it's not just yet-another-fad-language their employees keep pestering them about to use at work.
+
+It's literally safety in numbers and also becomes a self-fulfilling prophecy :)
+
+## To be a Tutorial for Building Rust Websites
+
+The entire <a href="https://github.com/alfiedotwtf/rustjobs.com" rel="nofollow">Rust Jobs source code</a> is Open Source (GPLv2), and I plan to post tutorials on this blog detailing "How to Build a Website in Rust", or more specifically, to explain how I've built Rust Jobs and why I've done things the way I have. Hopefully it will help you along your journey with Rust, help you build your own websites in Rust, and give you some useful development and devops tips and tricks.
+
+## To Document my Lean Startup Journey
+
+After reading startup posts on Hacker News and listening to startup podcasts for many years, I've noticed the same lesson seems to get taught again and again - usually when it's far too late - don't waste time building something nobody cares about! Instead, *build something people actually want!*
+
+It's almost been a year since I bought the "rustjobs.com" domain to me putting this first post you're reading right now online, and the reason it's taken so long is that I've spent more time reading about the "Lean Startup" process than coding... and I think that was time well spent. In other words:
+
+> Give me six hours to chop down a tree and I will spend the first four sharpening the axe
+>
+> -- Abraham Lincoln
+
+So instead of building what I think Rust Jobs should be, I'm going to use this blog to ask people what is it that *they* want from a Rust-focused jobs website.
+
+If you're interested in giving me feedback, from a single sentence to a novella, please do so - I would love to hear from you. And if you do want to get in contact with me but don't know what to say, here's some things I would like to know from you:
+
+- What websites you mostly use to find jobs
+- What do you absolutely hate about those websites
+- ***What would you like Rust Jobs to do for you!***
+
+## Thank You
+
+Hopefully this first post gives you a bit of an idea of where I want to go with Rust Jobs, which may one day help you land an awesome Rust job in the future.
+
+Thanks for reading.
+
+<div id="subscribe">
+    <h2>Don't miss the next blog post!</h2>
+    <p>
+        Get notified every time a new blog post goes live.
+        Subscribe below with your email address (no spam, I promise)
+    </p>
+    <input type="text" name="email" id="email"/>
+    <a class="button" href="" onclick="return subscribe('blog')">Subscribe to
+    new blog post emails</a>
+</div>
+"""

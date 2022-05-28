@@ -1,0 +1,150 @@
+// Each time the legal policies and disclaimer are updated, the following
+// variable gets set to the current epoch so that the next time we see a user,
+// they are shown an "updated" legal agreement popup.
+//
+// By doing it this way, it's no longer implicitly communicated via an email
+// that doesn't get read anyway, and as before, the user's agreement is an
+// actively explicit action rather than passively implied "action".
+var LAST_UPDATED_LEGAL_POLICIES_AND_DISCLAIMER = 1653746400000;
+
+window.onload = function() {
+    let consented_raw
+        = document.cookie.match(/[^;]?\s*legal\s*=\s*(\d+)\s*[$;]?/);
+
+    let consented_before
+        = (Array.isArray(consented_raw) && consented_raw.length > 1)
+            ? "Updated "
+            : "";
+
+    let consented
+        =  consented_before
+        && consented_raw[1] > LAST_UPDATED_LEGAL_POLICIES_AND_DISCLAIMER
+            ? true
+            : false;
+
+    // .* in regex to work around minifier::js bug treating `//` as a comment
+    if (!/\/(contact|legal).html/.test(window.location) && !consented) {
+        setTimeout(function() {
+            document.getElementById("content").style.filter = "blur(6px)";
+
+            let legal = document.createElement("div");
+            legal.id = "legal";
+
+            legal.innerHTML = `
+                <h2>${consented_before}Legal Policies and Disclaimer</h2>
+                <p>
+                    Please <a href="/legal.html">click here to read</a>
+                    our Legal Policies and Disclaimer.
+                </p>
+                <p>
+                    We do <strong>NOT</strong> use third-party cookies or trackers of any
+                    kind, however we may use the following cookies when you use
+                    this website:
+                </p>
+                <ul>
+                    <li>
+                        <strong>"legal"</strong> records your agreement to our
+                        Legal Policies and Disclaimer
+                    </li>
+                    <li>
+                        <strong>"session"</strong> allows us to authenticate
+                        and authorise you when logged in
+                    </li>
+                </ul>
+                <p>
+                    <a class="button" href="" onclick="return close_legal(true)">I have read and agree to the Legal Policies and Disclaimer, and I CONSENT to the Cookies Policy</a>
+                    <a class="button" href="" onclick="return close_legal(false)">I have read and agree to the Legal Policies and Disclaimer, and I DO NOT CONSENT to the Cookies Policy</a>
+                </p>
+            `;
+
+            document.getElementById("main").appendChild(legal);
+
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }, 450);
+    }
+
+    // .* in regex to work around minifier::js bug treating `//` as a comment
+    if (/\/legal.html/.test(window.location) && consented) {
+        let date_formatted = (new Date(parseInt(consented_raw[1]))).toLocaleString(undefined, {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+
+        let withdraw = document.createElement("div");
+        withdraw.id = "withdraw";
+
+        withdraw.innerHTML = `
+            <p class="message-ok">
+                <strong>You consented to this Cookie Policy on
+                ${date_formatted}</strong>. If you would like to withdraw
+                your consent to this Cookie Policy,
+                <a href="" onclick="return withdraw_consent()">click here</a>.
+            </p>
+        `;
+
+        let cookies_policy = document.evaluate(
+            '//h2[text()="Cookies Policy"]',
+            document,
+            null,
+            XPathResult.ANY_TYPE
+        );
+
+        cookies_policy.iterateNext().after(withdraw);
+    }
+};
+
+function subscribe(type) {
+    let email = document.evaluate(
+        '//input[@type="text" and @name="email"]',
+        document,
+        null,
+        XPathResult.ANY_TYPE
+    ).iterateNext();
+
+    if (email.value && /[^@\s]+@+[^@\s]/.test(email.value)) {
+        let url = new URL(`/subscribe/${type}/`, window.location.origin);
+        url.searchParams.set('email', email.value);
+
+        let xhr = new XMLHttpRequest();
+        xhr.responseType = "text";
+        xhr.open("GET", url);
+        xhr.send();
+
+        email.style.borderTop    = "1px solid #999";
+        email.style.borderLeft   = "1px solid #999";
+        email.style.borderRight  = "1px solid #DDD";
+        email.style.borderBottom = "1px solid #DDD";
+
+        let button = document.querySelectorAll("#subscribe a")[0];
+        button.style.backgroundColor = "#ccc";
+        button.onclick = function() { return false };
+        button.innerHTML = "Subscribed";
+    }
+    else {
+        email.style.border = "1px solid red";
+    }
+
+    return false;
+}
+
+function close_legal(set_cookie) {
+    if (set_cookie) {
+        let epoch = Date.now();
+        document.cookie = `legal=${epoch}; Path=/; SameSite=Lax; Expires=Tue Jan 19 2038 14:14:07`;
+    }
+
+    document.getElementById("legal").remove();
+    document.getElementById("content").style.filter = null;
+
+    return false;
+}
+
+function withdraw_consent() {
+    document.cookie = "legal=; Path=/; SameSite=Lax; Expires=0";
+    document.cookie = "session=; Path=/; SameSite=Lax; Expires=0";
+
+    document.getElementById("withdraw").remove();
+
+    return false;
+}

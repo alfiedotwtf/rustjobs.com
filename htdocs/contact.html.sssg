@@ -1,0 +1,16 @@
+[config]
+template = "content.html"
+
+[plaintext]
+title = "Rust Jobs - Contact Me"
+
+[markdown]
+content = """
+# Contact Me
+
+Hi, I'm Alfie - a solo developer working on building Rust Jobs in my spare time. As you can see, the website is currently under construction.
+
+If you would like to be a beta tester, have some say in the design or functionality, want to give me your feedback (good or bad I welcome it all), or just want to say hello, feel free to send me an email via the link below. I look forward to hearing from you.
+
+To hide from bots, my email address will be revealed when you <a href=/click-the-link onclick="var email = ['com', 'rustjobs.', 'alfie@'].reverse().join(''); this.parentNode.innerHTML=email; return false">click this link</a>
+"""
