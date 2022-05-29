@@ -36,7 +36,7 @@ It's literally safety in numbers and also becomes a self-fulfilling prophecy :)
 
 ## To be a Tutorial for Building Rust Websites
 
-The entire <a href="https://github.com/alfiedotwtf/rustjobs.com" rel="nofollow">Rust Jobs source code</a> is Open Source (GPLv2), and I plan to post tutorials on this blog detailing "How to Build a Website in Rust", or more specifically, to explain how I've built Rust Jobs and why I've done things the way I have. Hopefully it will help you along your journey with Rust, help you build your own websites in Rust, and give you some useful development and devops tips and tricks.
+The entire <a href="https://github.com/alfiedotwtf/rustjobs.com" rel="nofollow">Rust Jobs source code</a> is Open Source (GPLv3), and I plan to post tutorials on this blog detailing "How to Build a Website in Rust", or more specifically, to explain how I've built Rust Jobs and why I've done things the way I have. Hopefully it will help you along your journey with Rust, help you build your own websites in Rust, and give you some useful development and devops tips and tricks.
 
 ## To Document my Lean Startup Journey
 
