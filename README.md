@@ -1,6 +1,6 @@
 # rustjobs.com
 
-rustjobs.com - Source code of the Rust Jobs website
+rustjobs.com - Source code of the [Rust Jobs](https://www.rustjobs.com) website
 
 As you can see, the website is currently under construction.
 
@@ -46,4 +46,4 @@ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-this program. If not, see http://www.gnu.org/licenses/.
+this program. If not, see https://www.gnu.org/licenses/.
