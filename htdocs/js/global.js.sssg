@@ -52,8 +52,9 @@ window.onload = function() {
                     </li>
                 </ul>
                 <p>
-                    <a class="button" href="" onclick="return close_legal(true)">I have read and agree to the Legal Policies and Disclaimer, and I CONSENT to the Cookies Policy</a>
-                    <a class="button" href="" onclick="return close_legal(false)">I have read and agree to the Legal Policies and Disclaimer, and I DO NOT CONSENT to the Cookies Policy</a>
+                    I have read and agree to the Legal Policies and Disclaimer, and:
+                    <a class="button" href="" onclick="return close_legal(true)">I consent to the Cookies Policy</a>
+                    <a class="button" href="" onclick="return close_legal(false)">I do not consent to the Cookies Policy</a>
                 </p>
             `;
 
