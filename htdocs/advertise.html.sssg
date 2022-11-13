@@ -15,7 +15,7 @@ If you would like to be a beta tester, have some say in the design or functional
 To hide from bots, my email address will be revealed when you <a href=/click-the-link onclick="var email = ['com', 'rustjobs.', 'alfie@'].reverse().join(''); this.parentNode.innerHTML=email; return false">click this link</a>
 
 <div id="subscribe">
-    <h2>Get notified on advertising updates</h2>
+    <h2>Get advertising updates!</h2>
     <p>
         Want to be notified when advertising on Rust Jobs is ready?
         Subscribe below with your email address (no spam, I promise)
