@@ -103,12 +103,12 @@ strong {
 
 #menu {
     width:  100%;
-    height: 72px;
     margin: 0 auto;
 
     text-align:       right;
     border-bottom:    1px solid #CCC;
     background-image: url("/images/menu.png");
+    background-size:  cover;
 }
 
 #menu p {
